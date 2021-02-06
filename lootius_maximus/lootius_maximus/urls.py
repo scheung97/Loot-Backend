@@ -18,5 +18,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('db.urls')), #set home url to db "api" call 
+    path('', include('loot_backend.urls')), #set home url to db "api" call 
 ]
