@@ -15,7 +15,7 @@ class Product(models.Model):
         ('SO', 'Socks'),
     ]
     product_name = models.CharField(max_length = 45)
-    product_price = models.IntegerField(default = 0)
+    product_price = models.FloatField(default = 0)
     product_category = models.CharField(max_length=1, choices=ITEM_CATEGORIES)
     """
     not sure if these are needed
