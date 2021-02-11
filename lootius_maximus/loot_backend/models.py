@@ -18,6 +18,7 @@ class Product(models.Model):
     product_name = models.CharField(max_length = 45)
     product_price = models.FloatField(default = 0)
     product_category = models.CharField(max_length=3, default='N', choices=ITEM_CATEGORIES)
+    image = models.ImageField(upload_to= './images/', default = '')
     """
     not sure if these are needed
     """
