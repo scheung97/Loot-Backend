@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('loot_backend.urls')), #set home url to db "api" call 
+    #path('admin/', admin.site.urls),
+    path('', include('loot_backend.urls')), #set home url to db "api" call
 ]
